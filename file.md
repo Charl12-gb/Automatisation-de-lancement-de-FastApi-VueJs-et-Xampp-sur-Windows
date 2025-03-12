@@ -17,6 +17,7 @@ Créez un fichier .bat pour démarrer FastAPI et Vue.js automatiquement :
 
 📜 Script start_servers.bat
 
+```
 @echo off
 :: Démarrer XAMPP (si ce n'est pas encore fait)
 start /B "" "C:\xampp\xampp_start.exe"
@@ -35,6 +36,7 @@ start /B npm run dev
 
 :: Fermer la fenêtre de commande
 exit
+```
 
 Modifiez les chemins selon votre installation.
 
@@ -77,7 +79,7 @@ Pour assurer la relance automatique :
 
 Avec nssm (Non-Sucking Service Manager) :
 
-1. Téléchargez nssm ici.
+1. Téléchargez nssm.
 
 
 2. Décompressez-le et ouvrez un terminal dans le dossier win64.
@@ -85,9 +87,10 @@ Avec nssm (Non-Sucking Service Manager) :
 
 3. Installez FastAPI et Vue.js en tant que services :
 
+```
 nssm install FastAPI "C:\chemin\vers\python.exe" "C:\chemin\vers\backend\main.py"
 nssm install VueJS "C:\chemin\vers\node.exe" "C:\chemin\vers\frontend\npm run dev"
-
+```
 
 4. Démarrez les services avec nssm start FastAPI et nssm start VueJS.
 
